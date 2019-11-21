@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Meetups</string>
+    <string name="buttonLabel">Change label</string>
 </resources>
