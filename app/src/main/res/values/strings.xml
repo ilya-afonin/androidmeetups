@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Android Meetups</string>
     <string name="buttonLabel">Change label</string>
+    <string name="account_github_text" />
+    <string name="account_email_text" />
+    <string name="account_description" />
+    <string name="account_user_name">Alice Trump</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "I'm a professional web designer with 8 years experience. I'm determined and"
+        "enthusiastic, I have developed good planning and organisational skills and am confident"
+        "working independently or as part of a team. I am flexible regarding working hours and"
+        "I'm able to work a range of shifts."
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="default_link_label" />
 </resources>
