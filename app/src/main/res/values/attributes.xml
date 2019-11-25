@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ResourceLink">
+    <declare-styleable name="GlobalAttrDeclare">
         <attr name="linkIcon" format="reference" />
         <attr name="linkText" format="string" />
+        <attr name="linkPlaceholder" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ResourceLink">
+        <attr name="linkIcon" />
+        <attr name="linkText" />
+    </declare-styleable>
+
+    <declare-styleable name="ResourceInput">
+        <attr name="linkIcon" />
+        <attr name="linkText" />
     </declare-styleable>
 </resources>

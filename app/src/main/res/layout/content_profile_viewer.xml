@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ProfileActivity"
-    tools:showIn="@layout/activity_profile">
+    tools:context=".ProfileViewerActivity"
+    tools:showIn="@layout/activity_profile_viewer">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/aboutLabel"
+            android:id="@+id/profile_viewer_content_aboutLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
@@ -23,20 +23,20 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
         <TextView
-            android:id="@+id/descriptionText"
+            android:id="@+id/profile_viewer_content_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/large_text" />
 
         <View
-            android:id="@+id/contactsDivider"
+            android:id="@+id/profile_viewer_content_contactsDivider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="16dp"
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/contactsLabel"
+            android:id="@+id/profile_viewer_content_contactsLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="4dp"

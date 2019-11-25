@@ -16,4 +16,5 @@
     <string name="about_subtitle">About me</string>
     <string name="contacts_subtitle">Contacts</string>
     <string name="menu_bookmarks_text">Add to bookmarks</string>
+    <string name="resource_input_edit_placeholder" />
 </resources>

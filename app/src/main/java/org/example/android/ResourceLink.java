@@ -30,8 +30,8 @@ public class ResourceLink extends LinearLayout {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_resource_link, this);
         // Get views
-        linkIcon = findViewById(R.id.linkIcon);
-        linkLabel = findViewById(R.id.linkText);
+        linkIcon = findViewById(R.id.resource_link_icon);
+        linkLabel = findViewById(R.id.resource_link_text);
         // Get view properties from layout
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(
                 attrs, R.styleable.ResourceLink, 0, 0);
