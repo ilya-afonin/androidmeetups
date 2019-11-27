@@ -1,5 +1,7 @@
 package org.example.android;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class ProfileViewerActivity extends AppCompatActivity {
@@ -18,7 +21,7 @@ public class ProfileViewerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile_viewer);
         Toolbar toolbar = findViewById(R.id.profile_viewer_toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Alice Smith");
+        setTitle(getIntent().getStringExtra("userName"));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -31,14 +34,21 @@ public class ProfileViewerActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home:
-                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
+            case android.R.id.home:
+                finish();
                 return true;
-            case R.id.action_bookmark :
-                Toast.makeText(getApplicationContext(), "Add to bookmark", Toast.LENGTH_LONG).show();
+            case R.id.action_bookmark:
+                Toast.makeText(getApplicationContext(), "Added to bookmarks", Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void handleGithubPageClick(View view) {
+        ResourceLink link = (ResourceLink) view;
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(link.getLinkLabel()));
+        startActivity(intent);
     }
 }

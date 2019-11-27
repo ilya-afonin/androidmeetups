@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="16dp"
                 app:linkIcon="@drawable/ic_github"
-                app:linkText="GitHub repository" />
+                app:linkText="GitHub account" />
 
             <org.example.android.ResourceInput
                 android:layout_width="match_parent"

@@ -17,4 +17,7 @@
     <string name="contacts_subtitle">Contacts</string>
     <string name="menu_bookmarks_text">Add to bookmarks</string>
     <string name="resource_input_edit_placeholder" />
+    <string name="group_header">View team</string>
+    <string name="group_subheader">View list of team members</string>
+    <string name="main_manu_item_profile">Profile</string>
 </resources>

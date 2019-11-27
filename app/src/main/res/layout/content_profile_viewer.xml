@@ -64,11 +64,12 @@
                 app:linkText="alicesmith90@gmail.com" />
 
             <org.example.android.ResourceLink
+                android:onClick="handleGithubPageClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="16dp"
                 app:linkIcon="@drawable/ic_github"
-                app:linkText="https://github.com/alicesmith1337" />
+                app:linkText="https://github.com/" />
 
             <org.example.android.ResourceLink
                 android:layout_width="wrap_content"
